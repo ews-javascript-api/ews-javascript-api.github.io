@@ -1,0 +1,643 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JsonTokenizer | Ews JavaScript Api</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Ews JavaScript Api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_jsontokenizer.html">Core/JsonTokenizer</a>
+				</li>
+				<li>
+					<a href="core_jsontokenizer.jsontokenizer.html">JsonTokenizer</a>
+				</li>
+			</ul>
+			<h1>Class JsonTokenizer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">JsonTokenizer</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_jsontokenizer.jsontokenizer.html#currentmatch" class="tsd-kind-icon">current<wbr>Match</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_jsontokenizer.jsontokenizer.html#nexttoken" class="tsd-kind-icon">next<wbr>Token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_jsontokenizer.jsontokenizer.html#nexttokenpeeked" class="tsd-kind-icon">next<wbr>Token<wbr>Peeked</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_jsontokenizer.jsontokenizer.html#nexttokentype" class="tsd-kind-icon">next<wbr>Token<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonbooleanregexcode" class="tsd-kind-icon">Json<wbr>Boolean<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonclosearrayregexcode" class="tsd-kind-icon">Json<wbr>Close<wbr>Array<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncloseobjectregexcode" class="tsd-kind-icon">Json<wbr>Close<wbr>Object<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncolonregexcode" class="tsd-kind-icon">Json<wbr>Colon<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncommaregexcode" class="tsd-kind-icon">Json<wbr>Comma<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonnullregexcode" class="tsd-kind-icon">Json<wbr>Null<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonnumberregexcode" class="tsd-kind-icon">Json<wbr>Number<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonopenarrayregexcode" class="tsd-kind-icon">Json<wbr>Open<wbr>Array<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonopenobjectregexcode" class="tsd-kind-icon">Json<wbr>Open<wbr>Object<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonstringregexcode" class="tsd-kind-icon">Json<wbr>String<wbr>Reg<wbr>ExCode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#fulltokenizerregex" class="tsd-kind-icon">full<wbr>Tokenizer<wbr>Regex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonbooleanregex" class="tsd-kind-icon">json<wbr>Boolean<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonclosearrayregex" class="tsd-kind-icon">json<wbr>Close<wbr>Array<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncloseobjectregex" class="tsd-kind-icon">json<wbr>Close<wbr>Object<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncolonregex" class="tsd-kind-icon">json<wbr>Colon<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsoncommaregex" class="tsd-kind-icon">json<wbr>Comma<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonnullregex" class="tsd-kind-icon">json<wbr>Null<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonnumberregex" class="tsd-kind-icon">json<wbr>Number<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonopenarrayregex" class="tsd-kind-icon">json<wbr>Open<wbr>Array<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonopenobjectregex" class="tsd-kind-icon">json<wbr>Open<wbr>Object<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#jsonstringregex" class="tsd-kind-icon">json<wbr>String<wbr>Reg<wbr>Ex</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#tokendictionary" class="tsd-kind-icon">token<wbr>Dictionary</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_jsontokenizer.jsontokenizer.html#whitespaceregex" class="tsd-kind-icon">whitespace<wbr>Reg<wbr>Ex</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_jsontokenizer.jsontokenizer.html#advanceregexmatch" class="tsd-kind-icon">Advance<wbr>Reg<wbr>ExMatch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_jsontokenizer.jsontokenizer.html#nexttoken-1" class="tsd-kind-icon">Next<wbr>Token</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_jsontokenizer.jsontokenizer.html#peek" class="tsd-kind-icon">Peek</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="currentmatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> current<wbr>Match</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L13">Core/JsonTokenizer.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nexttoken" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> next<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L15">Core/JsonTokenizer.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nexttokenpeeked" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> next<wbr>Token<wbr>Peeked</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Token<wbr>Peeked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L16">Core/JsonTokenizer.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nexttokentype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> next<wbr>Token<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">next<wbr>Token<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/enumerations_jsontokentype.jsontokentype.html" class="tsd-signature-type">JsonTokenType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L14">Core/JsonTokenizer.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonbooleanregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Boolean<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Boolean<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L5">Core/JsonTokenizer.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonclosearrayregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Close<wbr>Array<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Close<wbr>Array<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L10">Core/JsonTokenizer.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncloseobjectregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Close<wbr>Object<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Close<wbr>Object<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L8">Core/JsonTokenizer.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncolonregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Colon<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Colon<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L11">Core/JsonTokenizer.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncommaregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Comma<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Comma<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L12">Core/JsonTokenizer.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonnullregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Null<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Null<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L6">Core/JsonTokenizer.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonnumberregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Number<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Number<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L4">Core/JsonTokenizer.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonopenarrayregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Open<wbr>Array<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Open<wbr>Array<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L9">Core/JsonTokenizer.ts:9</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonopenobjectregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>Open<wbr>Object<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>Open<wbr>Object<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L7">Core/JsonTokenizer.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonstringregexcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> Json<wbr>String<wbr>Reg<wbr>ExCode</h3>
+					<div class="tsd-signature tsd-kind-icon">Json<wbr>String<wbr>Reg<wbr>ExCode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L3">Core/JsonTokenizer.ts:3</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="fulltokenizerregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> full<wbr>Tokenizer<wbr>Regex</h3>
+					<div class="tsd-signature tsd-kind-icon">full<wbr>Tokenizer<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L29">Core/JsonTokenizer.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonbooleanregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Boolean<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Boolean<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L19">Core/JsonTokenizer.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonclosearrayregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Close<wbr>Array<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Close<wbr>Array<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L24">Core/JsonTokenizer.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncloseobjectregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Close<wbr>Object<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Close<wbr>Object<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L22">Core/JsonTokenizer.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncolonregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Colon<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Colon<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L25">Core/JsonTokenizer.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsoncommaregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Comma<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Comma<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L26">Core/JsonTokenizer.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonnullregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Null<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Null<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L20">Core/JsonTokenizer.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonnumberregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Number<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Number<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L18">Core/JsonTokenizer.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonopenarrayregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Open<wbr>Array<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Open<wbr>Array<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L23">Core/JsonTokenizer.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonopenobjectregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>Open<wbr>Object<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>Open<wbr>Object<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L21">Core/JsonTokenizer.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="jsonstringregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> json<wbr>String<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">json<wbr>String<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L17">Core/JsonTokenizer.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="tokendictionary" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> token<wbr>Dictionary</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Dictionary<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L28">Core/JsonTokenizer.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="whitespaceregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> whitespace<wbr>Reg<wbr>Ex</h3>
+					<div class="tsd-signature tsd-kind-icon">whitespace<wbr>Reg<wbr>Ex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L27">Core/JsonTokenizer.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="advanceregexmatch" class="tsd-anchor"></a>
+					<h3>Advance<wbr>Reg<wbr>ExMatch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Advance<wbr>Reg<wbr>ExMatch<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L30">Core/JsonTokenizer.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="nexttoken-1" class="tsd-anchor"></a>
+					<h3>Next<wbr>Token</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Next<wbr>Token<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/enumerations_jsontokentype.jsontokentype.html" class="tsd-signature-type">JsonTokenType</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L31">Core/JsonTokenizer.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/enumerations_jsontokentype.jsontokentype.html" class="tsd-signature-type">JsonTokenType</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="peek" class="tsd-anchor"></a>
+					<h3>Peek</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Peek<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/enumerations_jsontokentype.jsontokentype.html" class="tsd-signature-type">JsonTokenType</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/JsonTokenizer.ts#L32">Core/JsonTokenizer.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/enumerations_jsontokentype.jsontokentype.html" class="tsd-signature-type">JsonTokenType</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/core_jsontokenizer.html">Core/<wbr>Json<wbr>Tokenizer</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core_jsontokenizer.jsontokenizer.html" class="tsd-kind-icon">Json<wbr>Tokenizer</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_jsontokenizer.jsontokenizer.html#currentmatch" class="tsd-kind-icon">current<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_jsontokenizer.jsontokenizer.html#nexttoken" class="tsd-kind-icon">next<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_jsontokenizer.jsontokenizer.html#nexttokenpeeked" class="tsd-kind-icon">next<wbr>Token<wbr>Peeked</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_jsontokenizer.jsontokenizer.html#nexttokentype" class="tsd-kind-icon">next<wbr>Token<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonbooleanregexcode" class="tsd-kind-icon">Json<wbr>Boolean<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonclosearrayregexcode" class="tsd-kind-icon">Json<wbr>Close<wbr>Array<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncloseobjectregexcode" class="tsd-kind-icon">Json<wbr>Close<wbr>Object<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncolonregexcode" class="tsd-kind-icon">Json<wbr>Colon<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncommaregexcode" class="tsd-kind-icon">Json<wbr>Comma<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonnullregexcode" class="tsd-kind-icon">Json<wbr>Null<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonnumberregexcode" class="tsd-kind-icon">Json<wbr>Number<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonopenarrayregexcode" class="tsd-kind-icon">Json<wbr>Open<wbr>Array<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonopenobjectregexcode" class="tsd-kind-icon">Json<wbr>Open<wbr>Object<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonstringregexcode" class="tsd-kind-icon">Json<wbr>String<wbr>Reg<wbr>ExCode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#fulltokenizerregex" class="tsd-kind-icon">full<wbr>Tokenizer<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonbooleanregex" class="tsd-kind-icon">json<wbr>Boolean<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonclosearrayregex" class="tsd-kind-icon">json<wbr>Close<wbr>Array<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncloseobjectregex" class="tsd-kind-icon">json<wbr>Close<wbr>Object<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncolonregex" class="tsd-kind-icon">json<wbr>Colon<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsoncommaregex" class="tsd-kind-icon">json<wbr>Comma<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonnullregex" class="tsd-kind-icon">json<wbr>Null<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonnumberregex" class="tsd-kind-icon">json<wbr>Number<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonopenarrayregex" class="tsd-kind-icon">json<wbr>Open<wbr>Array<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonopenobjectregex" class="tsd-kind-icon">json<wbr>Open<wbr>Object<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#jsonstringregex" class="tsd-kind-icon">json<wbr>String<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#tokendictionary" class="tsd-kind-icon">token<wbr>Dictionary</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_jsontokenizer.jsontokenizer.html#whitespaceregex" class="tsd-kind-icon">whitespace<wbr>Reg<wbr>Ex</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_jsontokenizer.jsontokenizer.html#advanceregexmatch" class="tsd-kind-icon">Advance<wbr>Reg<wbr>ExMatch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_jsontokenizer.jsontokenizer.html#nexttoken-1" class="tsd-kind-icon">Next<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_jsontokenizer.jsontokenizer.html#peek" class="tsd-kind-icon">Peek</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
