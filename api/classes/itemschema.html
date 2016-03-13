@@ -65,6 +65,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents the schema for generic items.
+						Represents the schema for generic items.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -75,10 +83,13 @@
 								<span class="target">ItemSchema</span>
 								<ul class="tsd-hierarchy">
 									<li>
-										<a href="emailmessageschema.html" class="tsd-signature-type">EmailMessageSchema</a>
+										<a href="../interfaces/itemschemastatic.html" class="tsd-signature-type">ItemSchemaStatic</a>
 									</li>
 									<li>
 										<a href="appointmentschema.html" class="tsd-signature-type">AppointmentSchema</a>
+									</li>
+									<li>
+										<a href="emailmessageschema.html" class="tsd-signature-type">EmailMessageSchema</a>
 									</li>
 									<li>
 										<a href="contactschema.html" class="tsd-signature-type">ContactSchema</a>
@@ -112,7 +123,6 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#allowedresponseactions" class="tsd-kind-icon">Allowed<wbr>Response<wbr>Actions</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="itemschema.html#appointmentschema" class="tsd-kind-icon">Appointment<wbr>Schema</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#archivetag" class="tsd-kind-icon">Archive<wbr>Tag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#attachments" class="tsd-kind-icon">Attachments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#body" class="tsd-kind-icon">Body</a></li>
@@ -126,7 +136,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#displayto" class="tsd-kind-icon">Display<wbr>To</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#effectiverights" class="tsd-kind-icon">Effective<wbr>Rights</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#entityextractionresult" class="tsd-kind-icon">Entity<wbr>Extraction<wbr>Result</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="itemschema.html#extendedproperties" class="tsd-kind-icon">Extended<wbr>Properties</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="itemschema.html#extendedproperties" class="tsd-kind-icon">Extended<wbr>Properties</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#flag" class="tsd-kind-icon">Flag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#hasattachments" class="tsd-kind-icon">Has<wbr>Attachments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="itemschema.html#iconindex" class="tsd-kind-icon">Icon<wbr>Index</a></li>
@@ -179,8 +189,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="itemschema.html#registerindexedproperty" class="tsd-kind-icon">Register<wbr>Indexed<wbr>Property</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="itemschema.html#registerinternalproperty" class="tsd-kind-icon">Register<wbr>Internal<wbr>Property</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="itemschema.html#registerproperties" class="tsd-kind-icon">Register<wbr>Properties</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="itemschema.html#registerproperty" class="tsd-kind-icon">Register<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="itemschema.html#registerproperty" class="tsd-kind-icon">Register<wbr>Property</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="itemschema.html#trygetpropertydefinition" class="tsd-kind-icon">Try<wbr>Get<wbr>Property<wbr>Definition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="itemschema.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="itemschema.html#findpropertydefinition" class="tsd-kind-icon">Find<wbr>Property<wbr>Definition</a></li>
 							</ul>
 						</section>
 					</div>
@@ -199,9 +211,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L42">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:42</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:169</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Initializes a new instance of the <strong>ServiceObjectSchema</strong> class.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="itemschema.html" class="tsd-signature-type">ItemSchema</a></h4>
 						</li>
 					</ul>
@@ -215,20 +234,16 @@
 					<div class="tsd-signature tsd-kind-icon">Allowed<wbr>Response<wbr>Actions<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L267">Core/ServiceObjects/Schemas/ItemSchema.ts:267</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:342</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:794</li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="appointmentschema" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> Appointment<wbr>Schema</h3>
-					<div class="tsd-signature tsd-kind-icon">Appointment<wbr>Schema<span class="tsd-signature-symbol">:</span> <a href="appointmentschema.html" class="tsd-signature-type">AppointmentSchema</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#appointmentschema">AppointmentSchema</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L33">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:33</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>AllowedResponseActions</strong> property.
+							Defines the <strong>AllowedResponseActions</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="archivetag" class="tsd-anchor"></a>
@@ -236,9 +251,16 @@
 					<div class="tsd-signature tsd-kind-icon">Archive<wbr>Tag<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L442">Core/ServiceObjects/Schemas/ItemSchema.ts:442</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:580</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:878</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ArchiveTag</strong> property.
+							Defines the <strong>ArchiveTag</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="attachments" class="tsd-anchor"></a>
@@ -246,9 +268,16 @@
 					<div class="tsd-signature tsd-kind-icon">Attachments<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L151">Core/ServiceObjects/Schemas/ItemSchema.ts:151</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:181</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:734</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Attachments</strong> property.
+							Defines the <strong>Attachments</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="body" class="tsd-anchor"></a>
@@ -256,9 +285,16 @@
 					<div class="tsd-signature tsd-kind-icon">Body<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L100">Core/ServiceObjects/Schemas/ItemSchema.ts:100</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:112</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:710</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Body</strong> property.
+							Defines the <strong>Body</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="categories" class="tsd-anchor"></a>
@@ -266,9 +302,16 @@
 					<div class="tsd-signature tsd-kind-icon">Categories<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L169">Core/ServiceObjects/Schemas/ItemSchema.ts:169</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:208</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:746</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Categories</strong> property.
+							Defines the <strong>Categories</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="conversationid" class="tsd-anchor"></a>
@@ -276,9 +319,16 @@
 					<div class="tsd-signature tsd-kind-icon">Conversation<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L372">Core/ServiceObjects/Schemas/ItemSchema.ts:372</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:486</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:846</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ConversationId</strong> property.
+							Defines the <strong>ConversationId</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="culture" class="tsd-anchor"></a>
@@ -286,9 +336,16 @@
 					<div class="tsd-signature tsd-kind-icon">Culture<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L324">Core/ServiceObjects/Schemas/ItemSchema.ts:324</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:420</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:822</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Culture</strong> property.
+							Defines the <strong>Culture</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="datetimecreated" class="tsd-anchor"></a>
@@ -296,9 +353,16 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Time<wbr>Created<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L259">Core/ServiceObjects/Schemas/ItemSchema.ts:259</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:331</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:790</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>DateTimeCreated</strong> property.
+							Defines the <strong>DateTimeCreated</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="datetimereceived" class="tsd-anchor"></a>
@@ -306,9 +370,16 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Time<wbr>Received<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L153">Core/ServiceObjects/Schemas/ItemSchema.ts:153</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:186</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:738</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>DateTimeReceived</strong> property.
+							Defines the <strong>DateTimeReceived</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="datetimesent" class="tsd-anchor"></a>
@@ -316,9 +387,16 @@
 					<div class="tsd-signature tsd-kind-icon">Date<wbr>Time<wbr>Sent<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L251">Core/ServiceObjects/Schemas/ItemSchema.ts:251</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:320</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:786</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>DateTimeSent</strong> property.
+							Defines the <strong>DateTimeSent</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="displaycc" class="tsd-anchor"></a>
@@ -326,9 +404,16 @@
 					<div class="tsd-signature tsd-kind-icon">Display<wbr>Cc<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L300">Core/ServiceObjects/Schemas/ItemSchema.ts:300</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:387</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:810</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>DisplayCc</strong> property.
+							Defines the <strong>DisplayCc</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="displayto" class="tsd-anchor"></a>
@@ -336,9 +421,16 @@
 					<div class="tsd-signature tsd-kind-icon">Display<wbr>To<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L308">Core/ServiceObjects/Schemas/ItemSchema.ts:308</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:398</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:814</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>DisplayTo</strong> property.
+							Defines the <strong>DisplayTo</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="effectiverights" class="tsd-anchor"></a>
@@ -346,9 +438,16 @@
 					<div class="tsd-signature tsd-kind-icon">Effective<wbr>Rights<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L332">Core/ServiceObjects/Schemas/ItemSchema.ts:332</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:431</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:826</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>EffectiveRights</strong> property.
+							Defines the <strong>EffectiveRights</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="entityextractionresult" class="tsd-anchor"></a>
@@ -356,20 +455,33 @@
 					<div class="tsd-signature tsd-kind-icon">Entity<wbr>Extraction<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L415">Core/ServiceObjects/Schemas/ItemSchema.ts:415</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:544</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:866</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>EntityExtractionResult</strong> property.
+							Defines the <strong>EntityExtractionResult</strong> property.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
 					<a name="extendedproperties" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Extended<wbr>Properties</h3>
 					<div class="tsd-signature tsd-kind-icon">Extended<wbr>Properties<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#extendedproperties">ExtendedProperties</a></p>
+						<p>Overwrites ServiceObjectSchema.ExtendedProperties</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L35">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:35</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:50</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ExtendedProperties</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="flag" class="tsd-anchor"></a>
@@ -377,9 +489,16 @@
 					<div class="tsd-signature tsd-kind-icon">Flag<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L424">Core/ServiceObjects/Schemas/ItemSchema.ts:424</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:556</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:870</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Flag</strong> property.
+							Defines the <strong>Flag</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="hasattachments" class="tsd-anchor"></a>
@@ -387,9 +506,16 @@
 					<div class="tsd-signature tsd-kind-icon">Has<wbr>Attachments<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L316">Core/ServiceObjects/Schemas/ItemSchema.ts:316</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:409</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:818</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>HasAttachments</strong> property.
+							Defines the <strong>HasAttachments</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="iconindex" class="tsd-anchor"></a>
@@ -397,9 +523,16 @@
 					<div class="tsd-signature tsd-kind-icon">Icon<wbr>Index<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L477">Core/ServiceObjects/Schemas/ItemSchema.ts:477</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:627</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:894</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IconIndex</strong> property.
+							Defines the <strong>IconIndex</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="id" class="tsd-anchor"></a>
@@ -407,9 +540,16 @@
 					<div class="tsd-signature tsd-kind-icon">Id<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L91">Core/ServiceObjects/Schemas/ItemSchema.ts:91</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:100</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:706</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Id</strong> property.
+							Defines the <strong>Id</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="importance" class="tsd-anchor"></a>
@@ -417,9 +557,16 @@
 					<div class="tsd-signature tsd-kind-icon">Importance<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L178">Core/ServiceObjects/Schemas/ItemSchema.ts:178</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:220</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:750</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Importance</strong> property.
+							Defines the <strong>Importance</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="inreplyto" class="tsd-anchor"></a>
@@ -427,9 +574,16 @@
 					<div class="tsd-signature tsd-kind-icon">In<wbr>Reply<wbr>To<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L186">Core/ServiceObjects/Schemas/ItemSchema.ts:186</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:231</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:754</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>InReplyTo</strong> property.
+							Defines the <strong>InReplyTo</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="instance" class="tsd-anchor"></a>
@@ -437,9 +591,20 @@
 					<div class="tsd-signature tsd-kind-icon">Instance<span class="tsd-signature-symbol">:</span> <a href="itemschema.html" class="tsd-signature-type">ItemSchema</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L485">Core/ServiceObjects/Schemas/ItemSchema.ts:485</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:638</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:898</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd><p>Instance of <strong>ItemSchema</strong></p>
+							</dd>
+							<dt>internal</dt>
+							<dd><p>Instance of <strong>ItemSchema</strong></p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="instancekey" class="tsd-anchor"></a>
@@ -447,9 +612,16 @@
 					<div class="tsd-signature tsd-kind-icon">Instance<wbr>Key<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L398">Core/ServiceObjects/Schemas/ItemSchema.ts:398</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:521</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:858</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>InstanceKey</strong> property.
+							Defines the <strong>InstanceKey</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="internetmessageheaders" class="tsd-anchor"></a>
@@ -457,9 +629,16 @@
 					<div class="tsd-signature tsd-kind-icon">Internet<wbr>Message<wbr>Headers<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L242">Core/ServiceObjects/Schemas/ItemSchema.ts:242</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:308</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:782</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>InternetMessageHeaders</strong> property.
+							Defines the <strong>InternetMessageHeaders</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isassociated" class="tsd-anchor"></a>
@@ -467,9 +646,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Associated<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L202">Core/ServiceObjects/Schemas/ItemSchema.ts:202</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:253</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:762</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsAssociated</strong> property.
+							Defines the <strong>IsAssociated</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isdraft" class="tsd-anchor"></a>
@@ -477,9 +663,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Draft<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L210">Core/ServiceObjects/Schemas/ItemSchema.ts:210</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:264</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:766</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsDraft</strong> property.
+							Defines the <strong>IsDraft</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isfromme" class="tsd-anchor"></a>
@@ -487,9 +680,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>From<wbr>Me<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L218">Core/ServiceObjects/Schemas/ItemSchema.ts:218</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:275</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:770</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsFromMe</strong> property.
+							Defines the <strong>IsFromMe</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isreminderset" class="tsd-anchor"></a>
@@ -497,9 +697,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Reminder<wbr>Set<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L284">Core/ServiceObjects/Schemas/ItemSchema.ts:284</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:365</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:802</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsReminderSet</strong> property.
+							Defines the <strong>IsReminderSet</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isresend" class="tsd-anchor"></a>
@@ -507,9 +714,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Resend<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L226">Core/ServiceObjects/Schemas/ItemSchema.ts:226</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:286</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:774</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsResend</strong> property.
+							Defines the <strong>IsResend</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="issubmitted" class="tsd-anchor"></a>
@@ -517,9 +731,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Submitted<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L194">Core/ServiceObjects/Schemas/ItemSchema.ts:194</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:242</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:758</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsSubmitted</strong> property.
+							Defines the <strong>IsSubmitted</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="isunmodified" class="tsd-anchor"></a>
@@ -527,9 +748,16 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Unmodified<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L234">Core/ServiceObjects/Schemas/ItemSchema.ts:234</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:297</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:778</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>IsUnmodified</strong> property.
+							Defines the <strong>IsUnmodified</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="itemclass" class="tsd-anchor"></a>
@@ -537,9 +765,16 @@
 					<div class="tsd-signature tsd-kind-icon">Item<wbr>Class<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L109">Core/ServiceObjects/Schemas/ItemSchema.ts:109</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:124</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:714</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ItemClass</strong> property.
+							Defines the <strong>ItemClass</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="lastmodifiedname" class="tsd-anchor"></a>
@@ -547,9 +782,16 @@
 					<div class="tsd-signature tsd-kind-icon">Last<wbr>Modified<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L340">Core/ServiceObjects/Schemas/ItemSchema.ts:340</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:442</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:830</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>LastModifiedName</strong> property.
+							Defines the <strong>LastModifiedName</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="lastmodifiedtime" class="tsd-anchor"></a>
@@ -557,9 +799,16 @@
 					<div class="tsd-signature tsd-kind-icon">Last<wbr>Modified<wbr>Time<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L348">Core/ServiceObjects/Schemas/ItemSchema.ts:348</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:453</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:834</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>LastModifiedTime</strong> property.
+							Defines the <strong>LastModifiedTime</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="mimecontent" class="tsd-anchor"></a>
@@ -567,9 +816,16 @@
 					<div class="tsd-signature tsd-kind-icon">Mime<wbr>Content<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L125">Core/ServiceObjects/Schemas/ItemSchema.ts:125</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:146</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:722</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>MimeContent</strong> property.
+							Defines the <strong>MimeContent</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="normalizedbody" class="tsd-anchor"></a>
@@ -577,9 +833,16 @@
 					<div class="tsd-signature tsd-kind-icon">Normalized<wbr>Body<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L406">Core/ServiceObjects/Schemas/ItemSchema.ts:406</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:532</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:862</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>NormalizedBody</strong> property.
+							Defines the <strong>NormalizedBody</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="parentfolderid" class="tsd-anchor"></a>
@@ -587,9 +850,16 @@
 					<div class="tsd-signature tsd-kind-icon">Parent<wbr>Folder<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L134">Core/ServiceObjects/Schemas/ItemSchema.ts:134</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:158</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:726</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ParentFolderId</strong> property.
+							Defines the <strong>ParentFolderId</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="policytag" class="tsd-anchor"></a>
@@ -597,9 +867,16 @@
 					<div class="tsd-signature tsd-kind-icon">Policy<wbr>Tag<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L433">Core/ServiceObjects/Schemas/ItemSchema.ts:433</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:568</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:874</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>PolicyTag</strong> property.
+							Defines the <strong>PolicyTag</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="preview" class="tsd-anchor"></a>
@@ -607,9 +884,16 @@
 					<div class="tsd-signature tsd-kind-icon">Preview<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L460">Core/ServiceObjects/Schemas/ItemSchema.ts:460</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:604</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:886</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Preview</strong> property.
+							Defines the <strong>Preview</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="reminderdueby" class="tsd-anchor"></a>
@@ -617,9 +901,16 @@
 					<div class="tsd-signature tsd-kind-icon">Reminder<wbr>Due<wbr>By<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L275">Core/ServiceObjects/Schemas/ItemSchema.ts:275</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:353</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:798</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ReminderDueBy</strong> property.
+							Defines the <strong>ReminderDueBy</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="reminderminutesbeforestart" class="tsd-anchor"></a>
@@ -627,9 +918,16 @@
 					<div class="tsd-signature tsd-kind-icon">Reminder<wbr>Minutes<wbr>Before<wbr>Start<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L292">Core/ServiceObjects/Schemas/ItemSchema.ts:292</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:376</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:806</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>ReminderMinutesBeforeStart</strong> property.
+							Defines the <strong>ReminderMinutesBeforeStart</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="retentiondate" class="tsd-anchor"></a>
@@ -637,9 +935,16 @@
 					<div class="tsd-signature tsd-kind-icon">Retention<wbr>Date<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L451">Core/ServiceObjects/Schemas/ItemSchema.ts:451</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:592</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:882</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>RetentionDate</strong> property.
+							Defines the <strong>RetentionDate</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="sensitivity" class="tsd-anchor"></a>
@@ -647,9 +952,16 @@
 					<div class="tsd-signature tsd-kind-icon">Sensitivity<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L143">Core/ServiceObjects/Schemas/ItemSchema.ts:143</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:170</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:730</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Sensitivity</strong> property.
+							Defines the <strong>Sensitivity</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="size" class="tsd-anchor"></a>
@@ -657,9 +969,16 @@
 					<div class="tsd-signature tsd-kind-icon">Size<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L161">Core/ServiceObjects/Schemas/ItemSchema.ts:161</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:197</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:742</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Size</strong> property.
+							Defines the <strong>Size</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="storeentryid" class="tsd-anchor"></a>
@@ -667,9 +986,16 @@
 					<div class="tsd-signature tsd-kind-icon">Store<wbr>Entry<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L390">Core/ServiceObjects/Schemas/ItemSchema.ts:390</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:510</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:854</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>StoreEntryId</strong> property.
+							Defines the <strong>StoreEntryId</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="subject" class="tsd-anchor"></a>
@@ -677,9 +1003,16 @@
 					<div class="tsd-signature tsd-kind-icon">Subject<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L117">Core/ServiceObjects/Schemas/ItemSchema.ts:117</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:135</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:718</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>Subject</strong> property.
+							Defines the <strong>Subject</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="textbody" class="tsd-anchor"></a>
@@ -687,9 +1020,16 @@
 					<div class="tsd-signature tsd-kind-icon">Text<wbr>Body<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L468">Core/ServiceObjects/Schemas/ItemSchema.ts:468</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:615</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:890</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>TextBody</strong> property.
+							Defines the <strong>TextBody</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="uniquebody" class="tsd-anchor"></a>
@@ -697,9 +1037,16 @@
 					<div class="tsd-signature tsd-kind-icon">Unique<wbr>Body<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L381">Core/ServiceObjects/Schemas/ItemSchema.ts:381</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:498</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:850</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>UniqueBody</strong> property.
+							Defines the <strong>UniqueBody</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="webclienteditformquerystring" class="tsd-anchor"></a>
@@ -707,9 +1054,16 @@
 					<div class="tsd-signature tsd-kind-icon">Web<wbr>Client<wbr>Edit<wbr>Form<wbr>Query<wbr>String<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L364">Core/ServiceObjects/Schemas/ItemSchema.ts:364</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:475</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:842</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>WebClientEditFormQueryString</strong> property.
+							Defines the <strong>WebClientEditFormQueryString</strong> property.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="webclientreadformquerystring" class="tsd-anchor"></a>
@@ -717,9 +1071,16 @@
 					<div class="tsd-signature tsd-kind-icon">Web<wbr>Client<wbr>Read<wbr>Form<wbr>Query<wbr>String<span class="tsd-signature-symbol">:</span> <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L356">Core/ServiceObjects/Schemas/ItemSchema.ts:356</a></li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:464</li>
+							<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:838</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the <strong>WebClientReadFormQueryString</strong> property.
+							Defines the <strong>WebClientReadFormQueryString</strong> property.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -735,9 +1096,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#firstclassproperties-1">FirstClassProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L25">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:25</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:35</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the list of first class properties for this service object type.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -753,9 +1121,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#firstclasssummaryproperties-1">FirstClassSummaryProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L26">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:26</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:40</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the list of first class summary properties for this service object type.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -771,9 +1146,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#indexedproperties-1">IndexedProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L27">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:27</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:45</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the list of indexed properties for this service object type.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="indexedpropertydefinition.html" class="tsd-signature-type">IndexedPropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
@@ -792,7 +1174,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#getenumerator">GetEnumerator</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L180">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:180</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:209</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -810,13 +1192,23 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#registerindexedproperty">RegisterIndexedProperty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L182">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:182</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:218</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Registers an indexed property.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>indexedProperty: <a href="indexedpropertydefinition.html" class="tsd-signature-type">IndexedPropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The indexed property to register.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -827,20 +1219,36 @@
 					<a name="registerinternalproperty" class="tsd-anchor"></a>
 					<h3>Register<wbr>Internal<wbr>Property</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Register<wbr>Internal<wbr>Property<span class="tsd-signature-symbol">(</span>property<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Register<wbr>Internal<wbr>Property<span class="tsd-signature-symbol">(</span>registeringSchemaClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, property<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#registerinternalproperty">RegisterInternalProperty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L183">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:183</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:226</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Registers an internal schema property.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
+									<h5>registeringSchemaClass: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>SchemaClass calling this method - workaround for fieldUri registration oterhwise it registers super/parent class static properties as well. TypeScript does not provide a way to detect inherited property, hasOwnProperty returns true for parent static property</p>
+									</div>
+								</li>
+								<li>
 									<h5>property: <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property to register.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -858,34 +1266,90 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#registerproperties">RegisterProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ItemSchema.ts#L487">Core/ServiceObjects/Schemas/ItemSchema.ts:487</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ItemSchema.ts:645</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers properties.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>IMPORTANT NOTE: PROPERTIES MUST BE REGISTERED IN SCHEMA ORDER (i.e. the same order as they are defined in types.xsd)</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 					<a name="registerproperty" class="tsd-anchor"></a>
-					<h3>Register<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Register<wbr>Property<span class="tsd-signature-symbol">(</span>property<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a>, isInternal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Register<wbr>Property</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">Register<wbr>Property<span class="tsd-signature-symbol">(</span>registeringSchemaClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, property<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Register<wbr>Property<span class="tsd-signature-symbol">(</span>registeringSchemaClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, property<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a>, isInternal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#registerproperty">RegisterProperty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L186">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:186</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:241</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Registers a schema property. - workaround for fieldUri registration oterhwise it registers super/parent class static properties as well. TypeScript does not provide a way to detect inherited property, hasOwnProperty returns true</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>property: <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></h5>
+									<h5>registeringSchemaClass: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>SchemaClass calling this method - workaround for fieldUri registration oterhwise it registers super/parent class static properties as well. TypeScript does not provide a way to detect inherited property, hasOwnProperty returns true for parent static property</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isInternal: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<h5>property: <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property to register.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#registerproperty">RegisterProperty</a></p>
+								<ul>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:249</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>registeringSchemaClass: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>SchemaClass calling this method - workaround for fieldUri registration oterhwise it registers super/parent class static properties as well. TypeScript does not provide a way to detect inherited property, hasOwnProperty returns true for parent static property</p>
+									</div>
+								</li>
+								<li>
+									<h5>property: <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property to register.</p>
+									</div>
+								</li>
+								<li>
+									<h5>isInternal: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the property is internal or should be visible to developers.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -903,19 +1367,87 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#trygetpropertydefinition">TryGetPropertyDefinition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Core/ServiceObjects/Schemas/ServiceObjectSchema.ts#L204">Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:204</a></li>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:286</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Tries to get property definition.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>xmlElementName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name of the XML element.</p>
+									</div>
 								</li>
 								<li>
 									<h5>propertyDefinition: <a href="../interfaces/ioutparam.html" class="tsd-signature-type">IOutParam</a><span class="tsd-signature-symbol">&lt;</span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property definition.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if property definition exists.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="init" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#init">init</a></p>
+								<ul>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:211</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+					<a name="findpropertydefinition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Find<wbr>Property<wbr>Definition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Find<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#findpropertydefinition">FindPropertyDefinition</a></p>
+								<p>Overwrites <a href="serviceobjectschema.html">ServiceObjectSchema</a>.<a href="serviceobjectschema.html#findpropertydefinition">FindPropertyDefinition</a></p>
+								<ul>
+									<li>Defined in Core/ServiceObjects/Schemas/ServiceObjectSchema.ts:167</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Finds the property definition.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The URI.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></h4>
+							<p>Property definition.</p>
 						</li>
 					</ul>
 				</section>
@@ -941,9 +1473,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="itemschema.html#allowedresponseactions" class="tsd-kind-icon">Allowed<wbr>Response<wbr>Actions</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="itemschema.html#appointmentschema" class="tsd-kind-icon">Appointment<wbr>Schema</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="itemschema.html#archivetag" class="tsd-kind-icon">Archive<wbr>Tag</a>
@@ -984,7 +1513,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="itemschema.html#entityextractionresult" class="tsd-kind-icon">Entity<wbr>Extraction<wbr>Result</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
 								<a href="itemschema.html#extendedproperties" class="tsd-kind-icon">Extended<wbr>Properties</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
@@ -1113,11 +1642,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="itemschema.html#registerproperties" class="tsd-kind-icon">Register<wbr>Properties</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 								<a href="itemschema.html#registerproperty" class="tsd-kind-icon">Register<wbr>Property</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="itemschema.html#trygetpropertydefinition" class="tsd-kind-icon">Try<wbr>Get<wbr>Property<wbr>Definition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="itemschema.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="itemschema.html#findpropertydefinition" class="tsd-kind-icon">Find<wbr>Property<wbr>Definition</a>
 							</li>
 						</ul>
 					</li>

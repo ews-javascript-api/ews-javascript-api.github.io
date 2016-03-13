@@ -65,6 +65,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents the definition of an extended property.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -127,13 +134,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="extendedpropertydefinition.html#gethashcode" class="tsd-kind-icon">Get<wbr>Hash<wbr>Code</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="extendedpropertydefinition.html#getprintablename" class="tsd-kind-icon">Get<wbr>Printable<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="extendedpropertydefinition.html#getxmlelementname" class="tsd-kind-icon">Get<wbr>Xml<wbr>Element<wbr>Name</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="extendedpropertydefinition.html#loadfromxml" class="tsd-kind-icon">Load<wbr>From<wbr>Xml</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="extendedpropertydefinition.html#loadpropertyvaluefromxmljsobject" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Xml<wbr>JsObject</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedpropertydefinition.html#tostring" class="tsd-kind-icon">To<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="extendedpropertydefinition.html#writeattributestoxml" class="tsd-kind-icon">Write<wbr>Attributes<wbr>ToXml</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="extendedpropertydefinition.html#writetoxml" class="tsd-kind-icon">Write<wbr>ToXml</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="extendedpropertydefinition.html#xconstructor" class="tsd-kind-icon">xconstructor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="extendedpropertydefinition.html#isequalto" class="tsd-kind-icon">Is<wbr>Equal<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="extendedpropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a></li>
 							</ul>
 						</section>
 					</div>
@@ -147,24 +153,33 @@
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
 						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, propertySet<span class="tsd-signature-symbol">: </span><a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, propertySet<span class="tsd-signature-symbol">: </span><a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, propertySetId<span class="tsd-signature-symbol">: </span><a href="guid.html" class="tsd-signature-type">Guid</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, propertySetId<span class="tsd-signature-symbol">: </span><a href="guid.html" class="tsd-signature-type">Guid</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertySet<span class="tsd-signature-symbol">: </span><a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertySet<span class="tsd-signature-symbol">: </span><a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertySetId<span class="tsd-signature-symbol">: </span><a href="guid.html" class="tsd-signature-type">Guid</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extended<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertySetId<span class="tsd-signature-symbol">: </span><a href="guid.html" class="tsd-signature-type">Guid</a>, id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mapiType<span class="tsd-signature-symbol">: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L37">PropertyDefinitions/ExtendedPropertyDefinition.ts:37</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:76</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+									Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
 						</li>
@@ -172,18 +187,32 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L41">PropertyDefinitions/ExtendedPropertyDefinition.ts:41</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:81</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+										Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.
+									Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -192,21 +221,31 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L42">PropertyDefinitions/ExtendedPropertyDefinition.ts:42</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:87</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
-								<li>
-									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
-								</li>
 								<li>
 									<h5>tag: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The tag of the extended property.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -215,24 +254,39 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L43">PropertyDefinitions/ExtendedPropertyDefinition.ts:43</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<h5>propertySet: <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The extended property set of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>propertySet: <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h5>
+									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -241,24 +295,39 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L44">PropertyDefinitions/ExtendedPropertyDefinition.ts:44</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<h5>propertySet: <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The extended property set of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Id of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>propertySet: <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h5>
+									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -267,24 +336,39 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L45">PropertyDefinitions/ExtendedPropertyDefinition.ts:45</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:110</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<h5>propertySetId: <a href="guid.html" class="tsd-signature-type">Guid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The property set Id of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>propertySetId: <a href="guid.html" class="tsd-signature-type">Guid</a></h5>
+									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -293,24 +377,39 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L46">PropertyDefinitions/ExtendedPropertyDefinition.ts:46</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:118</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>create instance of ExtendedPropertyDefinition\n, please check the order of parameter, slightly shifted from ews managed api</p>
+									<p>Initializes a new instance of the <strong>ExtendedPropertyDefinition</strong> class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<h5>propertySetId: <a href="guid.html" class="tsd-signature-type">Guid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The property set Id of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Id of the extended property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>propertySetId: <a href="guid.html" class="tsd-signature-type">Guid</a></h5>
+									<h5>mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The MAPI type of the extended property.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h4>
@@ -327,9 +426,14 @@
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#type">Type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L31">PropertyDefinitions/ExtendedPropertyDefinition.ts:31</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:76</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the property type.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="id" class="tsd-anchor"></a>
@@ -337,7 +441,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L36">PropertyDefinitions/ExtendedPropertyDefinition.ts:36</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:33</li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +451,7 @@
 					<div class="tsd-signature tsd-kind-icon">mapi<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L37">PropertyDefinitions/ExtendedPropertyDefinition.ts:37</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:34</li>
 						</ul>
 					</aside>
 				</section>
@@ -357,7 +461,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L35">PropertyDefinitions/ExtendedPropertyDefinition.ts:35</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:32</li>
 						</ul>
 					</aside>
 				</section>
@@ -367,7 +471,7 @@
 					<div class="tsd-signature tsd-kind-icon">property<wbr>Set<span class="tsd-signature-symbol">:</span> <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L32">PropertyDefinitions/ExtendedPropertyDefinition.ts:32</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -377,7 +481,7 @@
 					<div class="tsd-signature tsd-kind-icon">property<wbr>Set<wbr>Id<span class="tsd-signature-symbol">:</span> <a href="guid.html" class="tsd-signature-type">Guid</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L33">PropertyDefinitions/ExtendedPropertyDefinition.ts:33</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -387,7 +491,7 @@
 					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L34">PropertyDefinitions/ExtendedPropertyDefinition.ts:34</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:31</li>
 						</ul>
 					</aside>
 				</section>
@@ -397,7 +501,7 @@
 					<div class="tsd-signature tsd-kind-icon">Field<wbr>Format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L17">PropertyDefinitions/ExtendedPropertyDefinition.ts:17</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -407,7 +511,7 @@
 					<div class="tsd-signature tsd-kind-icon">Id<wbr>Field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L22">PropertyDefinitions/ExtendedPropertyDefinition.ts:22</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -417,7 +521,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mapi<wbr>Type<wbr>Field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L23">PropertyDefinitions/ExtendedPropertyDefinition.ts:23</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -427,7 +531,7 @@
 					<div class="tsd-signature tsd-kind-icon">Name<wbr>Field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L21">PropertyDefinitions/ExtendedPropertyDefinition.ts:21</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -437,7 +541,7 @@
 					<div class="tsd-signature tsd-kind-icon">Property<wbr>Set<wbr>Field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L18">PropertyDefinitions/ExtendedPropertyDefinition.ts:18</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -447,7 +551,7 @@
 					<div class="tsd-signature tsd-kind-icon">Property<wbr>Set<wbr>IdField<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L19">PropertyDefinitions/ExtendedPropertyDefinition.ts:19</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -457,7 +561,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tag<wbr>Field<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L20">PropertyDefinitions/ExtendedPropertyDefinition.ts:20</a></li>
+							<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -474,9 +578,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L24">PropertyDefinitions/ExtendedPropertyDefinition.ts:24</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:39</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>nullable</dt>
+									<dd><p>Gets the Id of the extended property.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -491,9 +602,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L25">PropertyDefinitions/ExtendedPropertyDefinition.ts:25</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:44</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the MAPI type of the extended property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h4>
 						</li>
 					</ul>
@@ -508,9 +624,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L26">PropertyDefinitions/ExtendedPropertyDefinition.ts:26</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:49</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the name of the extended property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -525,9 +646,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L27">PropertyDefinitions/ExtendedPropertyDefinition.ts:27</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:54</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>nullable</dt>
+									<dd><p>Gets the property set of the extended property.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h4>
 						</li>
 					</ul>
@@ -542,9 +670,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L28">PropertyDefinitions/ExtendedPropertyDefinition.ts:28</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:59</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>nullable</dt>
+									<dd><p>Gets the property set Id or the extended property.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="guid.html" class="tsd-signature-type">Guid</a></h4>
 						</li>
 					</ul>
@@ -559,9 +694,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L29">PropertyDefinitions/ExtendedPropertyDefinition.ts:29</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:64</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>nullable</dt>
+									<dd><p>Gets the extended property&#39;s tag.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -577,9 +719,19 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#version">Version</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L30">PropertyDefinitions/ExtendedPropertyDefinition.ts:30</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:71</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the minimum Exchange version that supports this extended property.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>value</dt>
+									<dd><p>{ExchangeVersion} The version.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a></h4>
 						</li>
 					</ul>
@@ -597,16 +749,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L95">PropertyDefinitions/ExtendedPropertyDefinition.ts:95</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:162</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether a given extended property definition is equal to this extended property definition.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to check for equality.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if the properties definitions define the same extended property.</p>
 						</li>
 					</ul>
 				</section>
@@ -620,19 +781,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L99">PropertyDefinitions/ExtendedPropertyDefinition.ts:99</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:175</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Formats the field.</p>
+									</dd>
+									<dt>type</dt>
+									<dd><p><T>        Type of field value.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name.</p>
+									</div>
 								</li>
 								<li>
 									<h5>fieldValue: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The field value.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>Formatted value.</p>
 						</li>
 					</ul>
 				</section>
@@ -646,10 +824,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L105">PropertyDefinitions/ExtendedPropertyDefinition.ts:105</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:187</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Serves as a hash function for a particular type.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>A hash code for the current System.Object.</p>
 						</li>
 					</ul>
 				</section>
@@ -664,10 +848,18 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#getprintablename">GetPrintableName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L107">PropertyDefinitions/ExtendedPropertyDefinition.ts:107</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:194</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the property definition&#39;s printable name.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The property definition&#39;s printable name.</p>
 						</li>
 					</ul>
 				</section>
@@ -682,33 +874,18 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#getxmlelementname">GetXmlElementName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L120">PropertyDefinitions/ExtendedPropertyDefinition.ts:120</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:212</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the name of the XML element.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="loadfromxml" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Load<wbr>From<wbr>Xml</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">Load<wbr>From<wbr>Xml<span class="tsd-signature-symbol">(</span>reader<span class="tsd-signature-symbol">: </span><a href="ewsservicexmlreader.html" class="tsd-signature-type">EwsServiceXmlReader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L161">PropertyDefinitions/ExtendedPropertyDefinition.ts:161</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>reader: <a href="ewsservicexmlreader.html" class="tsd-signature-type">EwsServiceXmlReader</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>XML element name.</p>
 						</li>
 					</ul>
 				</section>
@@ -722,13 +899,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L132">PropertyDefinitions/ExtendedPropertyDefinition.ts:132</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:237</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Loads from XMLJsObject.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>jsObject: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The json object.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -746,7 +933,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#tostring">ToString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L20">PropertyDefinitions/PropertyDefinitionBase.ts:20</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -764,13 +951,23 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#writeattributestoxml">WriteAttributesToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L188">PropertyDefinitions/ExtendedPropertyDefinition.ts:188</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:272</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes the attributes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -788,45 +985,23 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#writetoxml">WriteToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L48">PropertyDefinitions/PropertyDefinitionBase.ts:48</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:94</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="xconstructor" class="tsd-anchor"></a>
-					<h3>xconstructor</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">xconstructor<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, mapiType<span class="tsd-signature-symbol">?: </span><a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a>, propertySet<span class="tsd-signature-symbol">?: </span><a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L83">PropertyDefinitions/ExtendedPropertyDefinition.ts:83</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tag: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> name: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> mapiType: <a href="../enums/mapipropertytype.html" class="tsd-signature-type">MapiPropertyType</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> propertySet: <a href="../enums/defaultextendedpropertyset.html" class="tsd-signature-type">DefaultExtendedPropertySet</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -843,19 +1018,65 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ExtendedPropertyDefinition.ts#L121">PropertyDefinitions/ExtendedPropertyDefinition.ts:121</a></li>
+									<li>Defined in PropertyDefinitions/ExtendedPropertyDefinition.ts:221</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Determines whether two specified instances of ExtendedPropertyDefinition are equal.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>extPropDef1: <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>First extended property definition.</p>
+									</div>
 								</li>
 								<li>
 									<h5>extPropDef2: <a href="extendedpropertydefinition.html" class="tsd-signature-type">ExtendedPropertyDefinition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Second extended property definition.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if extended property definitions are equal.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="loadfromxmljsobject" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Load<wbr>From<wbr>Xml<wbr>JsObject</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject<span class="tsd-signature-symbol">(</span>jsObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#loadfromxmljsobject">LoadFromXmlJsObject</a></p>
+								<ul>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>load from XMLJsObject.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>jsObject: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></h4>
+							<p>True if property was loaded.</p>
 						</li>
 					</ul>
 				</section>
@@ -957,9 +1178,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="extendedpropertydefinition.html#getxmlelementname" class="tsd-kind-icon">Get<wbr>Xml<wbr>Element<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="extendedpropertydefinition.html#loadfromxml" class="tsd-kind-icon">Load<wbr>From<wbr>Xml</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="extendedpropertydefinition.html#loadpropertyvaluefromxmljsobject" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Xml<wbr>JsObject</a>
 							</li>
@@ -972,11 +1190,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="extendedpropertydefinition.html#writetoxml" class="tsd-kind-icon">Write<wbr>ToXml</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="extendedpropertydefinition.html#xconstructor" class="tsd-kind-icon">xconstructor</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="extendedpropertydefinition.html#isequalto" class="tsd-kind-icon">Is<wbr>Equal<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="extendedpropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a>
 							</li>
 						</ul>
 					</li>

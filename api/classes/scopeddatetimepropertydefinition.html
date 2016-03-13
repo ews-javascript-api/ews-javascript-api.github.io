@@ -67,9 +67,11 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Represents a property definition for DateTime values scoped to a specific time zone property.</p>
-					</div>
+					<dl class="tsd-comment-tags">
+						<dt>internal</dt>
+						<dd><p>Represents a property definition for DateTime values scoped to a specific time zone property.</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -116,20 +118,18 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#getassociatedinternalproperties" class="tsd-kind-icon">Get<wbr>Associated<wbr>Internal<wbr>Properties</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#getconverteddatetime" class="tsd-kind-icon">Get<wbr>Converted<wbr>Date<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#getprintablename" class="tsd-kind-icon">Get<wbr>Printable<wbr>Name</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scopeddatetimepropertydefinition.html#gettimezoneproperty" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Property</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="scopeddatetimepropertydefinition.html#gettimezoneproperty" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Property</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#getxmlelementname" class="tsd-kind-icon">Get<wbr>Xml<wbr>Element<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#hasflag" class="tsd-kind-icon">Has<wbr>Flag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#loadpropertyvaluefromjson" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Json</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#loadpropertyvaluefromxmljsobject" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Xml<wbr>JsObject</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#registerassociatedinternalproperties" class="tsd-kind-icon">Register<wbr>Associated<wbr>Internal<wbr>Properties</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="scopeddatetimepropertydefinition.html#scopetotimezone" class="tsd-kind-icon">Scope<wbr>ToTime<wbr>Zone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#tostring" class="tsd-kind-icon">To<wbr>String</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#writeattributestoxml" class="tsd-kind-icon">Write<wbr>Attributes<wbr>ToXml</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#writejsonvalue" class="tsd-kind-icon">Write<wbr>Json<wbr>Value</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#writepropertyvaluetoxml" class="tsd-kind-icon">Write<wbr>Property<wbr>Value<wbr>ToXml</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="scopeddatetimepropertydefinition.html#writetoxml" class="tsd-kind-icon">Write<wbr>ToXml</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="scopeddatetimepropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a></li>
 							</ul>
 						</section>
 					</div>
@@ -141,31 +141,54 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Scoped<wbr>Date<wbr>Time<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertyName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, xmlElementName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, version<span class="tsd-signature-symbol">: </span><a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a>, uri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, flags<span class="tsd-signature-symbol">?: </span><a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a>, getPropertyDefinitionCallback<span class="tsd-signature-symbol">?: </span><a href="../interfaces/getpropertydefinitioncallback.html" class="tsd-signature-type">GetPropertyDefinitionCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="scopeddatetimepropertydefinition.html" class="tsd-signature-type">ScopedDateTimePropertyDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Scoped<wbr>Date<wbr>Time<wbr>Property<wbr>Definition<span class="tsd-signature-symbol">(</span>propertyName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, xmlElementName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, flags<span class="tsd-signature-symbol">: </span><a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a>, version<span class="tsd-signature-symbol">: </span><a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a>, getPropertyDefinitionCallback<span class="tsd-signature-symbol">: </span><a href="../interfaces/getpropertydefinitioncallback.html" class="tsd-signature-type">GetPropertyDefinitionCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="scopeddatetimepropertydefinition.html" class="tsd-signature-type">ScopedDateTimePropertyDefinition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ScopedDateTimePropertyDefinition.ts#L21">PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:21</a></li>
+									<li>Defined in PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:22</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Initializes a new instance of the  class.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Initializes a new instance of the <strong>ScopedDateTimePropertyDefinition</strong> class.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>propertyName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Name of the property.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>xmlElementName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Name of the XML element.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The URI.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>flags: <a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The flags.</p>
 										</div>
 									</div>
 								</li>
@@ -178,23 +201,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> uri: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The URI.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> flags: <a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The flags.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> getPropertyDefinitionCallback: <a href="../interfaces/getpropertydefinitioncallback.html" class="tsd-signature-type">GetPropertyDefinitionCallback</a></h5>
+									<h5>getPropertyDefinitionCallback: <a href="../interfaces/getpropertydefinitioncallback.html" class="tsd-signature-type">GetPropertyDefinitionCallback</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The callback that will be used to retrieve the time zone property.</p>
@@ -217,9 +224,14 @@
 						<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#type">Type</a></p>
 						<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#type">Type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L19">PropertyDefinitions/DateTimePropertyDefinition.ts:19</a></li>
+							<li>Defined in PropertyDefinitions/DateTimePropertyDefinition.ts:30</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the property type.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="getpropertydefinitioncallback" class="tsd-anchor"></a>
@@ -227,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Property<wbr>Definition<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="../interfaces/getpropertydefinitioncallback.html" class="tsd-signature-type">GetPropertyDefinitionCallback</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ScopedDateTimePropertyDefinition.ts#L21">PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:21</a></li>
+							<li>Defined in PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -246,9 +258,16 @@
 								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#isnullable-1">IsNullable</a></p>
 								<p>Overwrites <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#isnullable">IsNullable</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L18">PropertyDefinitions/DateTimePropertyDefinition.ts:18</a></li>
+									<li>Defined in PropertyDefinitions/DateTimePropertyDefinition.ts:25</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets a value indicating whether this property definition is for a nullable type (ref, int?, bool?...).</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -265,18 +284,28 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#name-1">Name</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L21">PropertyDefinitions/PropertyDefinition.ts:21</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:29</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the name of the property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#name-1">Name</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L30">PropertyDefinitions/PropertyDefinition.ts:30</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:38</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the name of the property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -298,9 +327,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="serviceobjectpropertydefinition.html#uri-1">Uri</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ServiceObjectPropertyDefinition.ts#L14">PropertyDefinitions/ServiceObjectPropertyDefinition.ts:14</a></li>
+									<li>Defined in PropertyDefinitions/ServiceObjectPropertyDefinition.ts:27</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the URI of the property definition.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -317,9 +353,19 @@
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#version-1">Version</a></p>
 								<p>Overwrites <a href="serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="serviceobjectpropertydefinition.html#version">Version</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L18">PropertyDefinitions/PropertyDefinition.ts:18</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:45</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the minimum Exchange version that supports this property.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>value</dt>
+									<dd><p>{ExchangeVersion} The version.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a></h4>
 						</li>
 					</ul>
@@ -335,9 +381,19 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#xmlelementname-1">XmlElementName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L20">PropertyDefinitions/PropertyDefinition.ts:20</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:52</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internalgets</dt>
+									<dd><p>the name of the XML element.</p>
+									</dd>
+									<dt>value</dt>
+									<dd><p>{string}  The name of the XML element.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -356,43 +412,21 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#getassociatedinternalproperties">GetAssociatedInternalProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L50">PropertyDefinitions/PropertyDefinition.ts:50</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:108</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internalgets</dt>
+									<dd><p>a list of associated internal properties.</p>
+									</dd>
+									<dt>remarks</dt>
+									<dd><p>This is a hack. It is here (currently) solely to help the API register the MeetingTimeZone property definition that is internal.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="getconverteddatetime" class="tsd-anchor"></a>
-					<h3>Get<wbr>Converted<wbr>Date<wbr>Time</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Converted<wbr>Date<wbr>Time<span class="tsd-signature-symbol">(</span>service<span class="tsd-signature-symbol">: </span><a href="exchangeservicebase.html" class="tsd-signature-type">ExchangeServiceBase</a>, propertyBag<span class="tsd-signature-symbol">: </span><a href="propertybag.html" class="tsd-signature-type">PropertyBag</a>, isUpdateOperation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="datetime.html" class="tsd-signature-type">DateTime</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#getconverteddatetime">GetConvertedDateTime</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L30">PropertyDefinitions/DateTimePropertyDefinition.ts:30</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>service: <a href="exchangeservicebase.html" class="tsd-signature-type">ExchangeServiceBase</a></h5>
-								</li>
-								<li>
-									<h5>propertyBag: <a href="propertybag.html" class="tsd-signature-type">PropertyBag</a></h5>
-								</li>
-								<li>
-									<h5>isUpdateOperation: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="datetime.html" class="tsd-signature-type">DateTime</a></h4>
+							<p>A list of PropertyDefinition objects.</p>
 						</li>
 					</ul>
 				</section>
@@ -408,24 +442,32 @@
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#getprintablename">GetPrintableName</a></p>
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#getprintablename">GetPrintableName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L57">PropertyDefinitions/PropertyDefinition.ts:57</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:121</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internalgets</dt>
+									<dd><p>the property definition&#39;s printable name.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The property definition&#39;s printable name.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="gettimezoneproperty" class="tsd-anchor"></a>
-					<h3>Get<wbr>Time<wbr>Zone<wbr>Property</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Get<wbr>Time<wbr>Zone<wbr>Property</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
 						<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Property<span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ScopedDateTimePropertyDefinition.ts#L52">PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:52</a></li>
+									<li>Defined in PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:56</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -459,10 +501,18 @@
 								<p>Inherited from <a href="serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="serviceobjectpropertydefinition.html#getxmlelementname">GetXmlElementName</a></p>
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#getxmlelementname">GetXmlElementName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ServiceObjectPropertyDefinition.ts#L29">PropertyDefinitions/ServiceObjectPropertyDefinition.ts:29</a></li>
+									<li>Defined in PropertyDefinitions/ServiceObjectPropertyDefinition.ts:56</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the name of the XML element.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>XML element name.</p>
 						</li>
 					</ul>
 				</section>
@@ -470,57 +520,67 @@
 					<a name="hasflag" class="tsd-anchor"></a>
 					<h3>Has<wbr>Flag</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Has<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a>, version<span class="tsd-signature-symbol">?: </span><a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">Has<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">Has<wbr>Flag<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a>, version<span class="tsd-signature-symbol">: </span><a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#hasflag">HasFlag</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L59">PropertyDefinitions/PropertyDefinition.ts:59</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:129</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internaldetermines</dt>
+									<dd><p>whether the specified flag is set.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>flag: <a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> version: <a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The flag.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the specified flag is set; otherwise, false.</p>
 						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-					<a name="loadpropertyvaluefromjson" class="tsd-anchor"></a>
-					<h3>Load<wbr>Property<wbr>Value<wbr>From<wbr>Json</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Json<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, service<span class="tsd-signature-symbol">: </span><a href="exchangeservice.html" class="tsd-signature-type">ExchangeService</a>, propertyBag<span class="tsd-signature-symbol">: </span><a href="propertybag.html" class="tsd-signature-type">PropertyBag</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#loadpropertyvaluefromjson">LoadPropertyValueFromJson</a></p>
-								<p>Overwrites <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#loadpropertyvaluefromjson">LoadPropertyValueFromJson</a></p>
+								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#hasflag">HasFlag</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L47">PropertyDefinitions/DateTimePropertyDefinition.ts:47</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:137</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internaldetermines</dt>
+									<dd><p>whether the specified flag is set.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<h5>flag: <a href="../enums/propertydefinitionflags.html" class="tsd-signature-type">PropertyDefinitionFlags</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The flag.</p>
+									</div>
 								</li>
 								<li>
-									<h5>service: <a href="exchangeservice.html" class="tsd-signature-type">ExchangeService</a></h5>
-								</li>
-								<li>
-									<h5>propertyBag: <a href="propertybag.html" class="tsd-signature-type">PropertyBag</a></h5>
+									<h5>version: <a href="../enums/exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Requested version.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the specified flag is set; otherwise, false.</p>
 						</li>
 					</ul>
 				</section>
@@ -536,9 +596,16 @@
 								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#loadpropertyvaluefromxmljsobject">LoadPropertyValueFromXmlJsObject</a></p>
 								<p>Overwrites <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#loadpropertyvaluefromxmljsobject">LoadPropertyValueFromXmlJsObject</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L48">PropertyDefinitions/DateTimePropertyDefinition.ts:48</a></li>
+									<li>Defined in PropertyDefinitions/DateTimePropertyDefinition.ts:113</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Loads the property value from XMLJsObject.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -546,9 +613,15 @@
 								</li>
 								<li>
 									<h5>service: <a href="exchangeservice.html" class="tsd-signature-type">ExchangeService</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The service.</p>
+									</div>
 								</li>
 								<li>
 									<h5>propertyBag: <a href="propertybag.html" class="tsd-signature-type">PropertyBag</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property bag.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -559,23 +632,33 @@
 					<a name="registerassociatedinternalproperties" class="tsd-anchor"></a>
 					<h3>Register<wbr>Associated<wbr>Internal<wbr>Properties</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Register<wbr>Associated<wbr>Internal<wbr>Properties<span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">Register<wbr>Associated<wbr>Internal<wbr>Properties<span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#registerassociatedinternalproperties">RegisterAssociatedInternalProperties</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinition.ts#L64">PropertyDefinitions/PropertyDefinition.ts:64</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinition.ts:156</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internalregisters</dt>
+									<dd><p>associated internal properties.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>properties: <a href="propertydefinition.html" class="tsd-signature-type">PropertyDefinition</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The list in which to add the associated properties.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -590,13 +673,15 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#scopetotimezone">ScopeToTimeZone</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ScopedDateTimePropertyDefinition.ts#L71">PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:71</a></li>
+									<li>Defined in PropertyDefinitions/ScopedDateTimePropertyDefinition.ts:76</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Scopes the date time property to the appropriate time zone, if necessary.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Scopes the date time property to the appropriate time zone, if necessary.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -641,7 +726,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#tostring">ToString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L20">PropertyDefinitions/PropertyDefinitionBase.ts:20</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -660,50 +745,26 @@
 								<p>Inherited from <a href="serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="serviceobjectpropertydefinition.html#writeattributestoxml">WriteAttributesToXml</a></p>
 								<p>Overwrites <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#writeattributestoxml">WriteAttributesToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ServiceObjectPropertyDefinition.ts#L30">PropertyDefinitions/ServiceObjectPropertyDefinition.ts:30</a></li>
+									<li>Defined in PropertyDefinitions/ServiceObjectPropertyDefinition.ts:63</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes the attributes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-					<a name="writejsonvalue" class="tsd-anchor"></a>
-					<h3>Write<wbr>Json<wbr>Value</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">Write<wbr>Json<wbr>Value<span class="tsd-signature-symbol">(</span>jsonObject<span class="tsd-signature-symbol">: </span><a href="jsonobject.html" class="tsd-signature-type">JsonObject</a>, propertyBag<span class="tsd-signature-symbol">: </span><a href="propertybag.html" class="tsd-signature-type">PropertyBag</a>, service<span class="tsd-signature-symbol">: </span><a href="exchangeservice.html" class="tsd-signature-type">ExchangeService</a>, isUpdateOperation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#writejsonvalue">WriteJsonValue</a></p>
-								<p>Overwrites <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#writejsonvalue">WriteJsonValue</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L73">PropertyDefinitions/DateTimePropertyDefinition.ts:73</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>jsonObject: <a href="jsonobject.html" class="tsd-signature-type">JsonObject</a></h5>
-								</li>
-								<li>
-									<h5>propertyBag: <a href="propertybag.html" class="tsd-signature-type">PropertyBag</a></h5>
-								</li>
-								<li>
-									<h5>service: <a href="exchangeservice.html" class="tsd-signature-type">ExchangeService</a></h5>
-								</li>
-								<li>
-									<h5>isUpdateOperation: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -719,19 +780,35 @@
 								<p>Inherited from <a href="datetimepropertydefinition.html">DateTimePropertyDefinition</a>.<a href="datetimepropertydefinition.html#writepropertyvaluetoxml">WritePropertyValueToXml</a></p>
 								<p>Overwrites <a href="propertydefinition.html">PropertyDefinition</a>.<a href="propertydefinition.html#writepropertyvaluetoxml">WritePropertyValueToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/DateTimePropertyDefinition.ts#L74">PropertyDefinitions/DateTimePropertyDefinition.ts:74</a></li>
+									<li>Defined in PropertyDefinitions/DateTimePropertyDefinition.ts:157</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes the property value to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 								<li>
 									<h5>propertyBag: <a href="propertybag.html" class="tsd-signature-type">PropertyBag</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The property bag.</p>
+									</div>
 								</li>
 								<li>
 									<h5>isUpdateOperation: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the context is an update operation.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -749,16 +826,58 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#writetoxml">WriteToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L48">PropertyDefinitions/PropertyDefinitionBase.ts:48</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:94</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="loadfromxmljsobject" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Load<wbr>From<wbr>Xml<wbr>JsObject</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject<span class="tsd-signature-symbol">(</span>jsObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitionbase.html#loadfromxmljsobject">LoadFromXmlJsObject</a></p>
+								<ul>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>load from XMLJsObject.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>jsObject: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></h4>
+							<p>True if property was loaded.</p>
 						</li>
 					</ul>
 				</section>
@@ -806,13 +925,10 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#getassociatedinternalproperties" class="tsd-kind-icon">Get<wbr>Associated<wbr>Internal<wbr>Properties</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="scopeddatetimepropertydefinition.html#getconverteddatetime" class="tsd-kind-icon">Get<wbr>Converted<wbr>Date<wbr>Time</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#getprintablename" class="tsd-kind-icon">Get<wbr>Printable<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="scopeddatetimepropertydefinition.html#gettimezoneproperty" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Property</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -820,9 +936,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#hasflag" class="tsd-kind-icon">Has<wbr>Flag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="scopeddatetimepropertydefinition.html#loadpropertyvaluefromjson" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Json</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#loadpropertyvaluefromxmljsobject" class="tsd-kind-icon">Load<wbr>Property<wbr>Value<wbr>From<wbr>Xml<wbr>JsObject</a>
@@ -840,13 +953,13 @@
 								<a href="scopeddatetimepropertydefinition.html#writeattributestoxml" class="tsd-kind-icon">Write<wbr>Attributes<wbr>ToXml</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="scopeddatetimepropertydefinition.html#writejsonvalue" class="tsd-kind-icon">Write<wbr>Json<wbr>Value</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#writepropertyvaluetoxml" class="tsd-kind-icon">Write<wbr>Property<wbr>Value<wbr>ToXml</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="scopeddatetimepropertydefinition.html#writetoxml" class="tsd-kind-icon">Write<wbr>ToXml</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="scopeddatetimepropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a>
 							</li>
 						</ul>
 					</li>

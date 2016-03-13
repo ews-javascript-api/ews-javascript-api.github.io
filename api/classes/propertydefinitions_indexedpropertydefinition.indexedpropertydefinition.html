@@ -68,6 +68,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents an indexed property definition.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -117,6 +124,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#writeattributestoxml" class="tsd-kind-icon">Write<wbr>Attributes<wbr>ToXml</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#writetoxml" class="tsd-kind-icon">Write<wbr>ToXml</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#isequalto" class="tsd-kind-icon">Is<wbr>Equal<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a></li>
 							</ul>
 						</section>
 					</div>
@@ -135,16 +143,33 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L11">PropertyDefinitions/IndexedPropertyDefinition.ts:11</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:23</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Initializes a new instance of the <strong>IndexedPropertyDefinition</strong> class.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The FieldURI attribute of the IndexedFieldURI element.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>index: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Index attribute of the IndexedFieldURI element.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html" class="tsd-signature-type">IndexedPropertyDefinition</a></h4>
@@ -160,9 +185,14 @@
 					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L11">PropertyDefinitions/IndexedPropertyDefinition.ts:11</a></li>
+							<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:16</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Index attribute of IndexedFieldURI element.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -177,9 +207,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L9">PropertyDefinitions/IndexedPropertyDefinition.ts:9</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:21</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the index of the property.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -195,7 +230,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#type">Type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L10">PropertyDefinitions/IndexedPropertyDefinition.ts:10</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:23</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -213,9 +248,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html#uri-1">Uri</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ServiceObjectPropertyDefinition.ts#L14">PropertyDefinitions/ServiceObjectPropertyDefinition.ts:14</a></li>
+									<li>Defined in PropertyDefinitions/ServiceObjectPropertyDefinition.ts:27</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the URI of the property definition.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -232,9 +274,19 @@
 								<p>Inherited from <a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html#version">Version</a></p>
 								<p>Overwrites <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#version">Version</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/ServiceObjectPropertyDefinition.ts#L13">PropertyDefinitions/ServiceObjectPropertyDefinition.ts:13</a></li>
+									<li>Defined in PropertyDefinitions/ServiceObjectPropertyDefinition.ts:22</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the minimum Exchange version that supports this property.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>value</dt>
+									<dd><p>{ExchangeVersion} The version.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/enumerations_exchangeversion.exchangeversion.html" class="tsd-signature-type">ExchangeVersion</a></h4>
 						</li>
 					</ul>
@@ -252,16 +304,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L19">PropertyDefinitions/IndexedPropertyDefinition.ts:19</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:42</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines whether a given indexed property definition is equal to this indexed property definition.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to check for equality.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if the properties definitions define the same indexed property.</p>
 						</li>
 					</ul>
 				</section>
@@ -275,10 +336,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L23">PropertyDefinitions/IndexedPropertyDefinition.ts:23</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:52</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Serves as a hash function for a particular type.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>A hash code for the current System.Object.</p>
 						</li>
 					</ul>
 				</section>
@@ -293,10 +360,18 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#getprintablename">GetPrintableName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L25">PropertyDefinitions/IndexedPropertyDefinition.ts:25</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:59</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the property definition&#39;s printable name.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The property definition&#39;s printable name.</p>
 						</li>
 					</ul>
 				</section>
@@ -311,10 +386,18 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html#getxmlelementname">GetXmlElementName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L26">PropertyDefinitions/IndexedPropertyDefinition.ts:26</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:66</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Gets the name of the XML element.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>XML element name.</p>
 						</li>
 					</ul>
 				</section>
@@ -329,7 +412,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#tostring">ToString</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L20">PropertyDefinitions/PropertyDefinitionBase.ts:20</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -347,13 +430,23 @@
 							<aside class="tsd-sources">
 								<p>Overwrites <a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html">ServiceObjectPropertyDefinition</a>.<a href="propertydefinitions_serviceobjectpropertydefinition.serviceobjectpropertydefinition.html#writeattributestoxml">WriteAttributesToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L32">PropertyDefinitions/IndexedPropertyDefinition.ts:32</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:86</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes the attributes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="core_ewsservicexmlwriter.ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -371,13 +464,23 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#writetoxml">WriteToXml</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/PropertyDefinitionBase.ts#L48">PropertyDefinitions/PropertyDefinitionBase.ts:48</a></li>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:94</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Writes to XML.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>writer: <a href="core_ewsservicexmlwriter.ewsservicexmlwriter.html" class="tsd-signature-type">EwsServiceXmlWriter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The writer.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -394,9 +497,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/PropertyDefinitions/IndexedPropertyDefinition.ts#L27">PropertyDefinitions/IndexedPropertyDefinition.ts:27</a></li>
+									<li>Defined in PropertyDefinitions/IndexedPropertyDefinition.ts:75</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>Determines whether two specified instances of IndexedPropertyDefinition are equal.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -407,6 +517,39 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>True if extended property definitions are equal.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="loadfromxmljsobject" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Load<wbr>From<wbr>Xml<wbr>JsObject</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject<span class="tsd-signature-symbol">(</span>jsObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html">PropertyDefinitionBase</a>.<a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html#loadfromxmljsobject">LoadFromXmlJsObject</a></p>
+								<ul>
+									<li>Defined in PropertyDefinitions/PropertyDefinitionBase.ts:57</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>load from XMLJsObject.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>jsObject: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="propertydefinitions_propertydefinitionbase.propertydefinitionbase.html" class="tsd-signature-type">PropertyDefinitionBase</a></h4>
+							<p>True if property was loaded.</p>
 						</li>
 					</ul>
 				</section>
@@ -472,10 +615,16 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#isequalto" class="tsd-kind-icon">Is<wbr>Equal<wbr>To</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="propertydefinitions_indexedpropertydefinition.indexedpropertydefinition.html#loadfromxmljsobject" class="tsd-kind-icon">Load<wbr>From<wbr>Xml<wbr>JsObject</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/propertydefinitions_indexedpropertydefinition.iindexedpropertydefinition.html" class="tsd-kind-icon">IIndexed<wbr>Property<wbr>Definition</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

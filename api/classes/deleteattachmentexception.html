@@ -65,6 +65,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents an error that occurs when a call to the DeleteAttachment web method fails.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -82,10 +89,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="deleteattachmentexception.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -93,35 +100,103 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#innerexception" class="tsd-kind-icon">Inner<wbr>Exception</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#message" class="tsd-kind-icon">Message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#serviceresponses" class="tsd-kind-icon">Service<wbr>Responses</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#serviceresponses" class="tsd-kind-icon">Service<wbr>Responses</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="deleteattachmentexception.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Delete<wbr>Attachment<wbr>Exception<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, innerException<span class="tsd-signature-symbol">?: </span><a href="exception.html" class="tsd-signature-type">Exception</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="deleteattachmentexception.html" class="tsd-signature-type">DeleteAttachmentException</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Delete<wbr>Attachment<wbr>Exception<span class="tsd-signature-symbol">(</span>serviceResponses<span class="tsd-signature-symbol">: </span><a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="deleteattachmentexception.html" class="tsd-signature-type">DeleteAttachmentException</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Delete<wbr>Attachment<wbr>Exception<span class="tsd-signature-symbol">(</span>serviceResponses<span class="tsd-signature-symbol">: </span><a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, innerException<span class="tsd-signature-symbol">: </span><a href="exception.html" class="tsd-signature-type">Exception</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="deleteattachmentexception.html" class="tsd-signature-type">DeleteAttachmentException</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="exception.html">Exception</a>.<a href="exception.html#constructor">constructor</a></p>
+								<p>Overwrites <a href="batchserviceresponseexception.html">BatchServiceResponseException</a>.<a href="batchserviceresponseexception.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Exceptions/Exception.ts#L6">Exceptions/Exception.ts:6</a></li>
+									<li>Defined in Exceptions/DeleteAttachmentException.ts:9</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of <strong>DeleteAttachmentException</strong>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">string</span></h5>
+									<h5>serviceResponses: <a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The list of responses to be associated with this exception.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> innerException: <a href="exception.html" class="tsd-signature-type">Exception</a></h5>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The message that describes the error.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="deleteattachmentexception.html" class="tsd-signature-type">DeleteAttachmentException</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overwrites <a href="batchserviceresponseexception.html">BatchServiceResponseException</a>.<a href="batchserviceresponseexception.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in Exceptions/DeleteAttachmentException.ts:16</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of <strong>DeleteAttachmentException</strong>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>serviceResponses: <a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The list of responses to be associated with this exception.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The message that describes the error.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>innerException: <a href="exception.html" class="tsd-signature-type">Exception</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The exception that is the cause of the current exception.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="deleteattachmentexception.html" class="tsd-signature-type">DeleteAttachmentException</a></h4>
@@ -138,7 +213,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="exception.html">Exception</a>.<a href="exception.html#innerexception">InnerException</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Exceptions/Exception.ts#L6">Exceptions/Exception.ts:6</a></li>
+							<li>Defined in Exceptions/Exception.ts:6</li>
 						</ul>
 					</aside>
 				</section>
@@ -149,20 +224,63 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="exception.html">Exception</a>.<a href="exception.html#message">Message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Exceptions/Exception.ts#L5">Exceptions/Exception.ts:5</a></li>
+							<li>Defined in Exceptions/Exception.ts:5</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="serviceresponses" class="tsd-anchor"></a>
 					<h3>Service<wbr>Responses</h3>
-					<div class="tsd-signature tsd-kind-icon">Service<wbr>Responses<span class="tsd-signature-symbol">:</span> <a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="batchserviceresponseexception.html">BatchServiceResponseException</a>.<a href="batchserviceresponseexception.html#serviceresponses">ServiceResponses</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/gautamsi/ews-javascript-api/blob/dev/src/js/Exceptions/BatchServiceResponseException.ts#L6">Exceptions/BatchServiceResponseException.ts:6</a></li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ServiceResponses<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="batchserviceresponseexception.html">BatchServiceResponseException</a>.<a href="batchserviceresponseexception.html#serviceresponses">ServiceResponses</a></p>
+								<ul>
+									<li>Defined in Exceptions/BatchServiceResponseException.ts:20</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a list of responses returned by the web method.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="serviceresponsecollection.html" class="tsd-signature-type">ServiceResponseCollection</a><span class="tsd-signature-symbol">&lt;</span><a href="deleteattachmentresponse.html" class="tsd-signature-type">DeleteAttachmentResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="exception.html">Exception</a>.<a href="exception.html#tostring">toString</a></p>
+								<ul>
+									<li>Defined in Exceptions/Exception.ts:18</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>override</dt>
+									<dd><p>user JSON.stringify for now, todo: impelemtn real Exception tostring</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -181,7 +299,7 @@
 					<li class="current tsd-kind-class">
 						<a href="deleteattachmentexception.html" class="tsd-kind-icon">Delete<wbr>Attachment<wbr>Exception</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="deleteattachmentexception.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -190,8 +308,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="deleteattachmentexception.html#message" class="tsd-kind-icon">Message</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="deleteattachmentexception.html#serviceresponses" class="tsd-kind-icon">Service<wbr>Responses</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="deleteattachmentexception.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
